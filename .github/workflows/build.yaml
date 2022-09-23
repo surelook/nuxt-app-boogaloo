@@ -37,6 +37,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run generate
+      - run: ls -al ./.output/public
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
