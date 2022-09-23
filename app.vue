@@ -23,9 +23,8 @@ if (config.gaTrackingId) {
 </script>
 
 <script>
-import DisclosureMessage from '../components/DisclosureMessage.vue'
-import HistoryTable from '../components/HistoryTable.vue'
-
+import DisclosureMessage from './components/DisclosureMessage.vue'
+import HistoryTable from './components/HistoryTable.vue'
 
 export default {
   name: 'App',
