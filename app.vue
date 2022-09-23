@@ -3,34 +3,33 @@
   <DisclosureMessage />
 </template>
 
-<!-- <script setup>
-import Analytics from 'analytics'
-import googleAnalytics from '@analytics/google-analytics'
-const config = useRuntimeConfig()
-
-if (config.gaTrackingId) {
-    const analytics = Analytics({
-        app: 'Deal',
-        plugins: [
-          googleAnalytics({
-            measurementIds: [config.gaTrackingId]
-          })
-        ]
-      })
-
-    analytics.page()
-}
-</script> -->
-
 <script>
 import DisclosureMessage from './components/DisclosureMessage.vue'
 import HistoryTable from './components/HistoryTable.vue'
+import Analytics from 'analytics'
+import googleAnalytics from '@analytics/google-analytics'
 
 export default {
   name: 'App',
   components: {
     DisclosureMessage,
     HistoryTable
+  },
+  mounted() {
+    const config = useRuntimeConfig()
+
+    if (config.gaTrackingId) {
+      const analytics = Analytics({
+          app: 'Deal',
+          plugins: [
+            googleAnalytics({
+              measurementIds: [config.gaTrackingId]
+            })
+          ]
+        })
+
+      analytics.page()
+    }
   }
 }
 </script>
