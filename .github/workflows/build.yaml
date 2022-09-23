@@ -23,7 +23,7 @@ jobs:
 
     env:
         GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
-        BASE_URL: ${{ GITHUB_REPOSITORY }}
+        BASE_URL: $GITHUB_REPOSITORY
 
     strategy:
       matrix:
@@ -37,7 +37,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run generate
-      - run: ${{GITHUB_REPOSITORY}}
+      - run: echo "$GITHUB_REPOSITORY"
       - run: ls -al ./.output/public
       - name: Setup Pages
         uses: actions/configure-pages@v2
