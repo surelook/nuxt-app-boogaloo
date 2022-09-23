@@ -5,5 +5,6 @@ export default defineNuxtConfig({
     },
     publicRuntimeConfig: {
         gaTrackingId: process.env.GA_TRACKING_ID
-    }
+    },
+    ssr: false
 })
