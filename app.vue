@@ -1,6 +1,6 @@
 <template>
   <div>
-    <dl style="border: 1px solid blue">
+    <dl v-if="$config.gaTrackingId" style="border: 1px solid blue">
       <dt>
         Ga Tracking Id
       </dt>
