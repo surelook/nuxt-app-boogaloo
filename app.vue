@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <HistoryTable />
-    <DisclosureMessage />
-  </div>
+  <HistoryTable />
+  <DisclosureMessage />
 </template>
 
 <script setup>
@@ -12,7 +10,7 @@ const config = useRuntimeConfig()
 
 if (config.gaTrackingId) {
     const analytics = Analytics({
-        app: document.title,
+        app: 'Deal',
         plugins: [
           googleAnalytics({
             measurementIds: [config.gaTrackingId]
