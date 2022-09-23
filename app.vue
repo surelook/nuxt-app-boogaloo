@@ -1,6 +1,8 @@
 <template>
-  <HistoryTable />
-  <DisclosureMessage />
+  <div>
+    <HistoryTable />
+    <DisclosureMessage />
+  </div>
 </template>
 
 <script setup>
