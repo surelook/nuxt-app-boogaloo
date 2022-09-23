@@ -6,5 +6,8 @@ export default defineNuxtConfig({
     publicRuntimeConfig: {
         gaTrackingId: process.env.GA_TRACKING_ID
     },
-    target: 'static'
+    target: 'static',
+    experimental: {
+        payloadExtraction: false
+    }
 })
