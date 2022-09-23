@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-        TEST_VAR: ${{ secrets.TEST_VAR }}
+        GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
 
     strategy:
       matrix:
