@@ -5,20 +5,10 @@
         Test Var
       </dt>
       <dd>
-        {{testVar}}
+        {{$config.testVar}}
       </dd>
 
     </dl>
     <NuxtWelcome />
   </div>
 </template>
-
-<script>
-  export default {
-    data() {
-      return {
-        testVar: process?.env?.TEST_VAR
-      }
-    }
-  }
-</script>
