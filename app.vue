@@ -11,7 +11,7 @@
         Base URL
       </dt>
       <dd>
-        {{$config.baseUrl}}
+        {{$config.baseURL}}
       </dd>
 
     </dl>
