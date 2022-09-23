@@ -37,7 +37,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run generate
-      - run: echo $GITHUB_ACTION_REPOSITORY
+      - run: ${GITHUB_REPOSITORY#*/}
       - run: ls -al ./.output/public
       - name: Setup Pages
         uses: actions/configure-pages@v2
