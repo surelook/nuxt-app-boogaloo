@@ -3,7 +3,7 @@
   <DisclosureMessage />
 </template>
 
-<script setup>
+<!-- <script setup>
 import Analytics from 'analytics'
 import googleAnalytics from '@analytics/google-analytics'
 const config = useRuntimeConfig()
@@ -20,7 +20,7 @@ if (config.gaTrackingId) {
 
     analytics.page()
 }
-</script>
+</script> -->
 
 <script>
 import DisclosureMessage from './components/DisclosureMessage.vue'
