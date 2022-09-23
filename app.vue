@@ -2,10 +2,10 @@
   <div>
     <dl style="border: 1px solid blue">
       <dt>
-        Test Var
+        Ga Tracking Id
       </dt>
       <dd>
-        {{$config.testVar}}
+        {{$config.gaTrackingId}}
       </dd>
 
     </dl>
